@@ -23,8 +23,8 @@
 
 //#define R2 33
 //#define R1 10
-#define R2 CONFIG_R2 
-#define R1 CONFIG_R1
+#define MY_R2 CONFIG_R2 
+#define MY_R1 CONFIG_R1
 
 static esp_adc_cal_characteristics_t *adc_chars;
 static const adc_channel_t channel = ADC_CHANNEL_6;     //GPIO34 if ADC1, GPIO14 if ADC2
