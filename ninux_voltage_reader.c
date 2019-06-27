@@ -75,7 +75,7 @@ float ninux_voltage_reader()
         //vTaskDelay(pdMS_TO_TICKS(2000));
         gpio_set_level(GPIO_OUTPUT_IO_0, 0);
         //vTaskDelay(pdMS_TO_TICKS(5000));
-	return voltage*k*1000;
+	return voltage*k/1000;
     }
 }
 
