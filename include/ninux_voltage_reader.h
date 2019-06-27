@@ -33,9 +33,9 @@ static const adc_unit_t unit = ADC_UNIT_1;
 
 static void check_efuse();
 
-static void print_char_val_type(esp_adc_cal_value_t val_type)
+static void print_char_val_type(esp_adc_cal_value_t val_type);
 void gpio_init();
-void voltage_reader();
+float ninux_voltage_reader();
 
 
 #endif

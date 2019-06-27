@@ -68,7 +68,7 @@ float ninux_voltage_reader()
         adc_reading /= NO_OF_SAMPLES;
         //Convert adc_reading to voltage in mV
         uint32_t voltage = esp_adc_cal_raw_to_voltage(adc_reading, adc_chars);
-	float k=(MY_R1+MY_R2)/MY_R1
+	float k=(MY_R1+MY_R2)/MY_R1;
         //printf("Raw: %d\tVoltage: %dmV = %.2fmV\n", adc_reading, voltage,(float) voltage*4.28);
         printf("Raw: %d\tVoltage: %dmV = %.2fmV\n", adc_reading, voltage,(float) voltage*k);
 	
