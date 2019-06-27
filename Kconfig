@@ -14,7 +14,7 @@ menu "Ninux Voltage Meter Configuration"
 
     config TRANSISTOR_GPIO  
         int "transistor gpio pin number"
-	default 33
+	default 18 
         help
             int, tranistor gpio pin number 
 endmenu
